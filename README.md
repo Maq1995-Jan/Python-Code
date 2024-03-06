@@ -1,1 +1,1 @@
-# Python code for the said mentioned problems.
+# Python code for some day to day problems.
