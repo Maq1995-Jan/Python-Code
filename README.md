@@ -1,1 +1,1 @@
-# Python code for calculating Area's of different shapes
+# Python code for the said mentioned problems.
