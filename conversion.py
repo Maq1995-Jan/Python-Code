@@ -16,7 +16,7 @@ def degToRad(value):
 
 while True:
         
-        option = input("Choose and option of r (or) d?:")
+        option = input("Choose an option of r (or) d?:")
         
         
         if option == 'r':
