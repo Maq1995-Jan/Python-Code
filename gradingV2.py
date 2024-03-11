@@ -1,3 +1,6 @@
+#Made changes such that the o/p is written in the respective file with proper formatting
+
+
 def grading(file):
 	
 	with open(file, 'r') as values:
