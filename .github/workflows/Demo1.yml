@@ -16,4 +16,4 @@ jobs:
         
     - name: Install requirements
       run: |
-        pip install -r dev-requirements.txt -e .
+        pip install -r dev-requirements.txt
