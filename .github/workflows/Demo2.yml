@@ -1,0 +1,25 @@
+name: PR
+on:
+  push:
+    branches:
+    - master
+jobs:
+  checks:
+    name: Checks
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ hashFiles('setup.py') }}-${{ hashFiles('dev-requirements.txt') }}
+        
+    - name: Install requirements
+      run: |
+        pip install --upgrade --upgrade-strategy eager -r dev-requirements.txt -e .
